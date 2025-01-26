@@ -1,1 +1,76 @@
+# Logs
+logs/
+*.log
+*.log.*
+
+# Node.js/Angular
+node_modules/
+dist/
+.angular/
+*.angular-cache/
+coverage/
+
+# Spring Boot (Java)
+target/
+bin/
+out/
+*.class
+
+# IDE-Specific
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+.metadata/
+
+# Maven
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+.gradle-cache/
+!gradle-wrapper.jar
+
+# Dependency Lock Files
+package-lock.json
+yarn.lock
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment Variables
+*.env
+.env.*
+*.local.env
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.~lock.*
+*.swo
+
+# Sass Cache
+.sass-cache/
+
+# Dependency Graph Files
+*.graphlib.json
+
+# Spring Boot Output
+*.jar
+*.war
 

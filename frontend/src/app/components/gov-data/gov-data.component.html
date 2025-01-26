@@ -1,0 +1,27 @@
+<div>
+  <h1>State Data</h1>
+
+  <!-- Show loading spinner when data is being fetched -->
+  <div *ngIf="isLoading">Loading data...</div>
+
+  <!-- Show table if data is fetched and available -->
+  <table *ngIf="!isLoading && stateData.length > 0" class="data-table">
+    <thead>
+      <tr>
+        <th>State Name</th>
+        <th>Population</th>
+        <th>State Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let state of stateData">
+        <td>{{ state.NAME }}</td>
+        <td>{{ state.B01001_001E }}</td>
+        <td>{{ state.state }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Show "No data available" if the array is empty -->
+  <p *ngIf="!isLoading && stateData.length === 0">No data available.</p>
+</div>
